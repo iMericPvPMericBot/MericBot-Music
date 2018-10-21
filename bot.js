@@ -186,7 +186,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 	return undefined;
 }//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 
-	 if (message.startsWith(prefix + 'join')) {
+	 if (msg.startsWith(prefix + 'join')) {
 		if (!message.member.voiceChannel) return message.reply('**Sorry,youre not on a voice channel**');
 		message.member.voiceChannel.join().then(message.react('✅'));
 	}
